@@ -1,0 +1,11 @@
+{
+  "name": "instapost",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "sworna <imsworna@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+  "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
+  "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/tailwind.css --minify"
+}
+}
