@@ -67,3 +67,5 @@ end
 gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 
 gem 'activestorage'
+
+gem 'simple_form'

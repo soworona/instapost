@@ -1,8 +1,6 @@
 class PostsController < ApplicationController
-
-    def index
-    render :post
+    def new
+        @post = Post.new
     end
-
 end
 
