@@ -69,3 +69,5 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 gem 'activestorage'
 
 gem 'simple_form'
+
+gem 'foreman', '~> 0.87.2'
