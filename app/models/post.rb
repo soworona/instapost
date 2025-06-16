@@ -5,4 +5,5 @@ class Post < ApplicationRecord
   
   validates :photo, :description, presence: true
   
+  has_many :comments
 end
