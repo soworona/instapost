@@ -10,7 +10,7 @@ class PostsController < ApplicationController
     end
 
     def create 
-        @post = current_user.posts.create(post-params)
+        @post = current_user.posts.create(post_params)
         if @post.valid?
             redirect_to root_path
         else
