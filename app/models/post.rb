@@ -5,5 +5,7 @@ class Post < ApplicationRecord
   
   validates :photo, :description, presence: true
   
-  has_many :comments
+  has_many :comments, dependent: :destroy
+
+  acts_as_votable
 end
