@@ -1,5 +1,8 @@
 class CommentsController < ApplicationController
 
+    def index
+        @posts = Post.all.order('created_at DESC').includes(:user, :comments)
+      end
 
     def create 
         @post = Post.find(params[:post_id])
@@ -12,6 +15,12 @@ class CommentsController < ApplicationController
         end
     end
 
+    def destroy
+        @post = Post.find(params[:post_id])
+        @comment = @post.comments.find(params[:id])
+        @comment.destroy
+        redirect_to root_path
+    end
 
     private
     
