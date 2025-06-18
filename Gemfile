@@ -70,6 +70,6 @@ gem 'activestorage'
 
 gem 'simple_form'
 
-gem 'foreman', '~> 0.87.2'
+gem 'foreman', '~> 0.88.1'
 
 gem 'acts_as_votable'
